@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}TEST{% endblock %}
+{% block content %}
+<div class="container">
+    <hr>
+    <a href="{% url 'myApp:input' %}">input</a><br>
+    <hr>
+    <a href="{% url 'myApp:output' %}">output</a>
+    <hr>
+</div>
+{% endblock %}

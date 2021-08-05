@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}TEST{% endblock %}
+{% block content %}
+<div class="container">
+    {% for obj in data %}
+        {{ obj.data }}
+    {% endfor %}
+    <hr>
+    <a href="{% url 'myApp:input' %}">input</a>
+</div>
+{% endblock %}
